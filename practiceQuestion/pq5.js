@@ -4,4 +4,9 @@ var gr_inc = new GlideRecord('incident');
 gr_inc.addQuery('category','Network');
 gr_inc.query();
 
-gs.info(gr_inc.getRowCount()); // there is five incident of category network.
+gs.info(gr_inc.getRowCount()); 
+// there is five incident of category network.
+
+while(gr_inc.next()){
+    gs.info(gr_inc.number + ' ' + gr_inc.category.getDisplayValue());
+}
