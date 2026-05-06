@@ -1,3 +1,6 @@
+//Create a new record, set the values for the fields, 
+// and display the incident number of the record
+
 // first method
 
 // var gr_inc = new GlideRecord('incident');

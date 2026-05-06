@@ -1,3 +1,5 @@
+// Display all problem records with associated incident.
+
 var gr_pr = new GlideRecord('problem');
 gr_pr.addJoinQuery('incident');
 gr_pr.query();
